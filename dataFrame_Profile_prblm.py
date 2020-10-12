@@ -30,6 +30,10 @@ for col in columns:
     result = data[col].idxmax()
     consensus.append(result)
     
-
 print(''.join(consensus))
-print(data)
+print(data[:1])
+
+fg = open('rslnd.txt', 'a')
+fg.write(''.join(consensus))
+fg.write(str(data))
+fg.close()
