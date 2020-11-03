@@ -11,7 +11,7 @@ def readFile(filePath):
     with open(filePath, 'r') as f:
         return [white_space.strip() for white_space in f.readlines()] 
     
-s = readFile(r'C:\Users\alexandru.bujor\Desktop\rosalind_prot.txt')
+s = ['AUGGCU']
 
 ''' Transform the seq into a string '''
 
